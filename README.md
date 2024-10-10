@@ -34,9 +34,10 @@ M365 Admin Assist Script is a PowerShell script designed to help Microsoft 365 a
    ```
 
 3. Install the required PowerShell modules:
-   ```bash
+   ```powershell
    Install-Module AzureAD -Force
-   Install-Module MSOnline -Force
+   Install-Module ExchangeOnlineManagement -Force
+   Install-Module Microsoft.graph -Force
    ```
 
 ## Usage
@@ -52,10 +53,10 @@ Help documents are included in each of the script file. To access the help infor
 ```powershell
 Get-Help Invoke-GroupMessageTrace.ps1
 ```
-
-To see the examples, type: `Get-Help Invoke-GroupMessageTrace -Examples`
-For more information, type: `Get-Help Invoke-GroupMessageTrace -Detailed`
-For technical information, type: `Get-Help Invoke-GroupMessageTrace -Full`
+for more advanced details, use any of the combination below
+- To see the examples, type: `Get-Help Invoke-GroupMessageTrace -Examples`
+- For more information, type: `Get-Help Invoke-GroupMessageTrace -Detailed`
+- For technical information, type: `Get-Help Invoke-GroupMessageTrace -Full`
     
 ## Available Tasks
 - Getting Unsed groups | **Invoke-GroupMessageTrace.ps1**
